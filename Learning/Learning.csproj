@@ -95,8 +95,17 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\HambugerHeavenChallenge\Financial.xaml.cs">
+      <DependentUpon>Financial.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HambugerHeavenChallenge\Food.xaml.cs">
+      <DependentUpon>Food.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\HamburgerExample.xaml.cs">
       <DependentUpon>HamburgerExample.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\HambugerHeavenChallenge\HamburgerHeavenChallenge.xaml.cs">
+      <DependentUpon>HamburgerHeavenChallenge.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\LaudibleChallenge.xaml.cs">
       <DependentUpon>LaudibleChallenge.xaml</DependentUpon>
@@ -107,16 +116,16 @@
     <Compile Include="Pages\MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\NavigationExample.xaml.cs">
+    <Compile Include="Pages\Navigation\NavigationExample.xaml.cs">
       <DependentUpon>NavigationExample.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Page1.xaml.cs">
+    <Compile Include="Pages\Navigation\Page1.xaml.cs">
       <DependentUpon>Page1.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Page2.xaml.cs">
+    <Compile Include="Pages\Navigation\Page2.xaml.cs">
       <DependentUpon>Page2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Page3.xaml.cs">
+    <Compile Include="Pages\Navigation\Page3.xaml.cs">
       <DependentUpon>Page3.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\RelativePanelPage.xaml.cs">
@@ -134,6 +143,8 @@
     <None Include="Learning_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Financial.png" />
+    <Content Include="Assets\Food.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -148,7 +159,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Pages\HambugerHeavenChallenge\Financial.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\HambugerHeavenChallenge\Food.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\HamburgerExample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\HambugerHeavenChallenge\HamburgerHeavenChallenge.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -164,19 +187,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Pages\NavigationExample.xaml">
+    <Page Include="Pages\Navigation\NavigationExample.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\Page1.xaml">
+    <Page Include="Pages\Navigation\Page1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\Page2.xaml">
+    <Page Include="Pages\Navigation\Page2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\Page3.xaml">
+    <Page Include="Pages\Navigation\Page3.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
