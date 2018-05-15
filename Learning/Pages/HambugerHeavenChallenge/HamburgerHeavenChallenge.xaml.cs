@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Learning.Pages.HambugerHeavenChallenge;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -25,6 +26,25 @@ namespace Learning.Pages
         public HamburgerHeavenChallenge()
         {
             this.InitializeComponent();
+            MyFrame.Navigate(typeof(Financial));
+        }
+
+        private void HamburgerButton_Click(object sender, RoutedEventArgs e)
+        {
+            FinancialSplitView.IsPaneOpen = !FinancialSplitView.IsPaneOpen;
+        }
+
+        private void SearchButton_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void PaneListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if (FianncialListBoxItem.IsSelected)
+                MyFrame.Navigate(typeof(Financial));
+            else if (FoodListBoxItem.IsSelected)
+                MyFrame.Navigate(typeof(Food));
         }
     }
 }
