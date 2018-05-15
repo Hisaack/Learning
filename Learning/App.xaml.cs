@@ -96,5 +96,10 @@ namespace Learning
             //TODO: Save application state and stop any background activity
             deferral.Complete();
         }
+
+        private void btn_Click()
+        {
+
+        }
     }
 }
