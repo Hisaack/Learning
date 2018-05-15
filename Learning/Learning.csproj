@@ -95,6 +95,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\HamburgerExample.xaml.cs">
+      <DependentUpon>HamburgerExample.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\LaudibleChallenge.xaml.cs">
       <DependentUpon>LaudibleChallenge.xaml</DependentUpon>
     </Compile>
@@ -145,6 +148,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Pages\HamburgerExample.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\LaudibleChallenge.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
