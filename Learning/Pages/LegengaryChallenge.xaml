@@ -1,0 +1,58 @@
+﻿<Page
+    x:Class="Learning.Pages.LegengaryChallenge"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Learning.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <StackPanel Orientation="Vertical"
+                Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Text="Rendering Absolute Surrender"
+                   Margin="10,10,0,0"
+                   FontSize="48"
+                   FontWeight="Bold"/>
+        <StackPanel Orientation="Horizontal"
+                    Margin="0,10,0,0">
+            <StackPanel Orientation="Vertical" 
+                    Width="250px"
+                    HorizontalAlignment="Left"
+                    Margin="20,10,0,0">
+                <TextBlock TextWrapping="Wrap"
+                           Text="Nearly 90 years after the Olympic triumph which inspired the film Chariots of Fire, sports writer and missionary, Hefin Rhys Jones, tells the amazing true story of athlete Eric Liddell. Born in 1902 to his Scottish missionary parents in Tianjin (Tientsin), China, Eric Henry Liddell's life is a triumph of the human spirit. Voted Scotland's greatest ever Olympian in 2002, his story is immor-talized in the film Chariots of Fire, which follows the lives of Liddell and his rival Harold Abrahams - two men with very different views and beliefs about life, as they strive for Olympic Gold. Known as the Flying Scotsman, Liddell excelled in sport from a young age. During his time at Eltham College in Surrey - a boarding school for the sons of missionaries, he was awarded the Black Heath Cup as the best athlete of his year for his captaincy of the school's rug-by and cricket teams. At University in Edinburgh, he earned his degree in pure science. At the same time, his sporting endeavors won him places in the national teams; representing Scotland seven times in rugby as a winger, and in running as a sprinter. In 1923 he won the important AAA event in the 100 yards, breaking the British record with a time of 9.7 seconds - a record which stood for 35 years, as well as winning races over the 440-yard distance." FontSize="16" FontFamily="Times New Roman"/>
+            </StackPanel>
+            <StackPanel Orientation="Vertical"
+                    HorizontalAlignment="Center"
+                    Margin="20,10,0,0"
+                    Width="500px">
+                <TextBlock TextWrapping="Wrap"
+                       Text="But it is for his exploits at the 1924 Olympics that the Scot will forever be remembered.
+I object to Sunday sport in total
+A devout Christian who had become a prominent nationwide preacher, Liddell entered the Olympics as one of the favorites for the 100m. But his dreams of Olympic Gold were seemingly shattered when he found out that the 100m heats would fall on a Sunday.
+Due to his beliefs about the Sabbath, Liddell made the decision not to compete in his favored event. Instead, he spent the morning of the heats preaching in the Scots Church in Paris.
+He came under fire in the press and even in parliament for his decision. But Liddell stuck to his guns, declaring: I object to Sunday sport in total. He decided to shift his attention to the 400m, in which he had posted a pre-Olympic best of 49.6 seconds in the 1924 AAAs - a decent but unspectacular time by international standards.
+Having been drawn in the outside lane for the final, which meant that he was deprived of a view of the other runners, the 22 year-old was already disadvantaged. But with the pipes of the 51st Highland Brigade, who had been playing outside the stadium before the race, still ringing in his ears, and inspired by the words 'Those who honor me, I will honor' (1 Samuel 2:vs 30) on a piece of paper slipped to him by the American team masseuse on his way to the start, Liddell put in an outstanding display.
+With God help I can run faster
+Going clear of his biggest rivals - the Americans Horatio Fitch and Jackson Schulz, by sprinting the first 200m, he remarkably managed to keep on sprinting for the last 200m. Holding off his rivals down the home straight, he broke not only the Olympic, but the European and World records in the process. He later said, The secret of my success over the 400m is that I run the first 200m as fast as I can. Then, for the second 200m, with God help I can run faster.
+Success could have been even greater for the Scot if he had chosen to run in the 4x400 relay. But once again he put God first, and refused to compete due to the race being on a Sunday. His running style was certainly not poetry in motion. The Guardian, when reporting his death in 1945 noted: He is remembered among lovers of Athletics as probably the ugliest runner to have won an Olympic Championship. Eric Liddell continued to compete after his Olympic triumph, contrib-uting to a British Empire Team to victory over the USA in the 4x400. In 1925 he gave up a glittering athletic career to return to the land of his birth working as, amongst other things, a teacher in an Anglo-Chinese College. During one of the two occasions when he returned to his native land, he was asked if he ever regretted giving up his athletics career and the fame that went with it. Liddell responded, It's natural for a chap to think all over that sometimes, but Iam glad that Iam at the work Iam en-gaged in now. A fellow's life counts for far more at this than the other." FontFamily="Times New Roman" FontSize="15"/>
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal"
+                        Margin="20,10,20,0"
+                        Width="300px">
+                <Rectangle Width="200"
+                           VerticalAlignment="Top"
+                           Height="200"
+                           Fill="Blue"/>
+                <StackPanel Width="100"
+                            Orientation="Vertical">
+                    <Rectangle Fill="Red"
+                               Height="100"/>
+                    <Rectangle Fill="Yellow"
+                               Height="100"/>
+                </StackPanel>
+
+            </StackPanel>
+        </StackPanel>
+    </StackPanel>
+</Page>
