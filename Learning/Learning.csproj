@@ -107,6 +107,9 @@
     <Compile Include="Pages\RelativePanelPage.xaml.cs">
       <DependentUpon>RelativePanelPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\SplitViewPage.xaml.cs">
+      <DependentUpon>SplitViewPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -143,6 +146,10 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Include="Pages\RelativePanelPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\SplitViewPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
