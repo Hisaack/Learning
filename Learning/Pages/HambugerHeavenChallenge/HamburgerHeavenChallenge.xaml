@@ -19,20 +19,28 @@
                     Content="&#xE700;"
                     Click="HamburgerButton_Click"
                     RelativePanel.AlignLeftWithPanel="True"/>
-            <TextBlock FontSize="24"
-                       RelativePanel.RightOf="HamburgerButton"
+            <Button  FontFamily="Segoe MDL2 Assets"
+                     FontSize="36"
+                     Name="BackButton"
+                     Content="&#xE0C4;"
+                     RelativePanel.RightOf="HamburgerButton"
+                     Click="BackButton_Click"/>
+            <TextBlock Name="TitleTextBlock"
+                       FontSize="28"
+                       RelativePanel.RightOf="BackButton"
                        FontWeight="Bold"
                        Text="Financial"
                        Margin="20,0,0,0"/>
             <Button FontFamily="Segoe MDL2 Assets"
                     FontSize="36" 
                     Name="SearchButton"
-                    Content="&#xE094;"
+                    Content="&#xE1A3;"
                     Click="SearchButton_Click"
                     RelativePanel.AlignRightWithPanel="True"/>
             <TextBox RelativePanel.LeftOf="SearchButton"
                      Width="200"
-                     Text="Search"
+                     Height="48"
+                     PlaceholderText="Search"
                      TextAlignment="Start"
                      FontSize="24"
                      Name="SearchTextBox"/>
@@ -49,18 +57,18 @@
                          SelectionChanged="PaneListBox_SelectionChanged">
                     <ListBoxItem Name="FianncialListBoxItem">
                         <StackPanel Orientation="Horizontal">
-                            <Button FontFamily="Segoe MDL2 Assets"
+                            <TextBlock FontFamily="Segoe MDL2 Assets"
                                     FontSize="36"
-                                    Content="&#xE7BF;"/>
+                                    Text="&#xE7BF;"/>
                             <TextBlock Text="Financial"
                                        Margin="20,0,0,0"/>
                         </StackPanel>
                     </ListBoxItem>
                     <ListBoxItem Name="FoodListBoxItem">
                         <StackPanel Orientation="Horizontal">
-                            <Button FontFamily="Segoe MDL2 Assets"
+                            <TextBlock FontFamily="Segoe MDL2 Assets"
                                     FontSize="36"
-                                    Content="&#xE790;"/>
+                                    Text="&#xE790;"/>
                             <TextBlock Text="Food"
                                        Margin="20,0,0,0"/>
                         </StackPanel>

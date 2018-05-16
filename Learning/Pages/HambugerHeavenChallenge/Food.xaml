@@ -9,6 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Image Name="FoodImage"
+               VerticalAlignment="Top"
                Source="ms-appx:///Assets/Food.png"
                Stretch="Uniform"/>
     </Grid>

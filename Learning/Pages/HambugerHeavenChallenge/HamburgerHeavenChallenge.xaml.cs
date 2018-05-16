@@ -26,6 +26,8 @@ namespace Learning.Pages
         public HamburgerHeavenChallenge()
         {
             this.InitializeComponent();
+            BackButton.Visibility = Visibility.Collapsed;
+            FianncialListBoxItem.IsSelected = true;
             MyFrame.Navigate(typeof(Financial));
         }
 
@@ -42,9 +44,26 @@ namespace Learning.Pages
         private void PaneListBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (FianncialListBoxItem.IsSelected)
+            {
+                BackButton.Visibility = Visibility.Collapsed;
                 MyFrame.Navigate(typeof(Financial));
+                TitleTextBlock.Text = "Financial";
+            }
             else if (FoodListBoxItem.IsSelected)
+            {
+                BackButton.Visibility = Visibility.Visible;
                 MyFrame.Navigate(typeof(Food));
+                TitleTextBlock.Text = "Food";
+            }
+        }
+
+        private void BackButton_Click(object sender, RoutedEventArgs e)
+        {
+            if (MyFrame.CanGoBack)
+            {
+                MyFrame.GoBack();
+                FianncialListBoxItem.IsSelected = true;
+            }
         }
     }
 }

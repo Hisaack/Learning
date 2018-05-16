@@ -9,6 +9,7 @@
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Image Name="FinancialImage"
+               VerticalAlignment="Top"
                Source="ms-appx:///Assets/Financial.png"
                Stretch="UniformToFill"/>
     </Grid>
