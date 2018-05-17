@@ -134,6 +134,21 @@
     <Compile Include="Pages\SplitViewPage.xaml.cs">
       <DependentUpon>SplitViewPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Stupendous Style Challenge\CoffeePage.xaml.cs">
+      <DependentUpon>CoffeePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Stupendous Style Challenge\CompletePage.xaml.cs">
+      <DependentUpon>CompletePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Stupendous Style Challenge\DonutPage.xaml.cs">
+      <DependentUpon>DonutPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Stupendous Style Challenge\SchedulePage.xaml.cs">
+      <DependentUpon>SchedulePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Stupendous Style Challenge\Stupendous Style Challenge.xaml.cs">
+      <DependentUpon>Stupendous Style Challenge.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -208,6 +223,26 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\SplitViewPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Stupendous Style Challenge\CoffeePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Stupendous Style Challenge\CompletePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Stupendous Style Challenge\DonutPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Stupendous Style Challenge\SchedulePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\Stupendous Style Challenge\Stupendous Style Challenge.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
