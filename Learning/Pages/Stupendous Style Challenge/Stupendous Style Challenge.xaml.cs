@@ -30,22 +30,22 @@ namespace Learning.Pages.Stupendous_Style_Challenge
 
         private void DonutBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            MyFrame.Navigate(typeof(DonutPage));
         }
 
         private void CoffeeBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            MyFrame.Navigate(typeof(CoffeePage));
         }
 
         private void ScheduleBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            MyFrame.Navigate(typeof(SchedulePage));
         }
 
         private void CompleteBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            MyFrame.Navigate(typeof(CompletePage));
         }
     }
 }
