@@ -26,5 +26,25 @@ namespace Learning.Pages.Stupendous_Style_Challenge
         {
             this.InitializeComponent();
         }
+
+        private void DonutBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CoffeeBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ScheduleBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CompleteBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

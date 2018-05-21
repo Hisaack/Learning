@@ -19,12 +19,60 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
         <Button Style="{StaticResource ButtonStyle}"
-                x:Name="_do">
+                x:Name="DonutBtn"
+                Click="DonutBtn_Click">
             <StackPanel Orientation="Horizontal"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center">
+                <Image Name="DonutIcon"
+                       Stretch="None"
+                       Source="ms-appx:///Assets/donut-icon.png"/>
+                <TextBlock Style="{StaticResource TextBlockStyle}"
+                           Text="Donuts"
+                           Name="DonutTextBlock"/>
+            </StackPanel>
+        </Button>
+        <Button Style="{StaticResource ButtonStyle}"
+                x:Name="CoffeeBtn"
+                Click="CoffeeBtn_Click"
+                Grid.Column="1"
+                >
+            <StackPanel VerticalAlignment="Center"
                         HorizontalAlignment="Center"
-                        VerticalAlignment="Center">
-                <Image Name="DonutIcon" Source="ms-appx:///Assets/donut-icon.png"/>
-                <TextBlock/>
+                        Orientation="Horizontal">
+                <Image x:Name="CofeeIcon"
+                       Source="ms-appx:///Assets/coffee-icon.png"
+                       Stretch="None"/>
+                <TextBlock Style="{StaticResource TextBlockStyle}"
+                           Text="Coffee"/>
+            </StackPanel>
+        </Button>
+        <Button Grid.Column="2"
+                Style="{StaticResource ButtonStyle}"
+                Name="ScheduleBtn"
+                Click="ScheduleBtn_Click">
+            <StackPanel VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Orientation="Horizontal">
+                <Image Stretch="None"
+                       Name="ScheduleIcon"
+                       Source="ms-appx:///Assets/schedule-icon.png"/>
+                <TextBlock Style="{StaticResource TextBlockStyle}"
+                           Text="Schedule"/>
+            </StackPanel>
+        </Button>
+        <Button Grid.Column="3"
+                Style="{StaticResource ButtonStyle}"
+                Name="CompleteBtn"
+                Click="CompleteBtn_Click">
+            <StackPanel HorizontalAlignment="Center"
+                        VerticalAlignment="Center"
+                        Orientation="Horizontal">
+                <Image Name="CompleteIcon"
+                       Stretch="None"
+                       Source="ms-appx:///Assets/complete-icon.png"/>
+                <TextBlock Text="Complete"
+                           Style="{StaticResource TextBlockStyle}"/>
             </StackPanel>
         </Button>
     </Grid>
