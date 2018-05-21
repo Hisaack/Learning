@@ -7,7 +7,39 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid Background="Red">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Column="0"
+               Grid.Row="0"
+               Grid.ColumnSpan="2"
+               Stretch="Uniform"
+               Source="ms-appx:///Assets/color-logo.png"
+               HorizontalAlignment="Left"
+               VerticalAlignment="Center"
+               Margin="20,0,0,0"/>
+        <TextBlock Grid.Row="1"
+                   Grid.Column="0"
+                   Style="{StaticResource TextBlockStyle2}"
+                   Text="Original Glazed Count:"/>
+        <Slider Maximum="24"
+                Margin="0,0,20,0"
+                Grid.Row="1"
+                Grid.Column="1"/>
+        <TextBlock Grid.Row="2"
+                   Grid.Column="0"
+                   Style="{StaticResource TextBlockStyle2}"
+                   Text="Speed Way Special Count :"/>
+        <Slider Grid.Row="2"
+                Grid.Column="1"
+                Margin="0,0,20,0"
+                Maximum="24"/>
     </Grid>
 </Page>

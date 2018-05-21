@@ -25,6 +25,7 @@ namespace Learning.Pages.Stupendous_Style_Challenge
         public Stupendous_Style_Challenge()
         {
             this.InitializeComponent();
+            MyFrame.Navigate(typeof(DonutPage));
         }
 
         private void DonutBtn_Click(object sender, RoutedEventArgs e)

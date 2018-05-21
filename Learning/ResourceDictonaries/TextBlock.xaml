@@ -10,4 +10,11 @@
         <Setter Property="HorizontalAlignment" Value="Center"/>
         <Setter Property="Foreground" Value="White"/>
     </Style>
+    <Style TargetType="TextBlock"
+           x:Key="TextBlockStyle2">
+        <Setter Property="Margin" Value="20,0,0,0"/>
+        <Setter Property="Foreground" Value="White"/>
+        <Setter Property="FontSize" Value="18"/>
+        <Setter Property="HorizontalAlignment" Value="Left"/>
+    </Style>
 </ResourceDictionary>
