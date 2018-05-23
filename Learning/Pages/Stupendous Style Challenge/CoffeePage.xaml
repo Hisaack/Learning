@@ -7,7 +7,69 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid Background="#3C1F19">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Image Source="ms-appx:///Assets/color-logo.png"
+               Width="150"
+               Stretch="UniformToFill"/>
+        <Button Grid.Row="1"
+                Grid.Column="1"
+                Margin="10,0,0,0"
+                Name="RoastBtn">
+            <TextBlock Text="Roast"
+                       Style="{StaticResource TextBlockStyle}"/>
+            <Button.Flyout>
+                <MenuFlyout Placement="Top"
+                            x:Name="RoastMenuFlyOut"
+                            Closed="RoastMenuFlyOut_Closed">
+                    <MenuFlyoutItem Text="None"/>
+                    <MenuFlyoutItem Text="Dark"/>
+                    <MenuFlyoutItem Text="Medium"/>
+                </MenuFlyout>
+            </Button.Flyout>
+        </Button>
+        <Button Grid.Row="1"
+                Grid.Column="2"
+                Margin="10,0,0,0"
+                Name="SweetenerBtn">
+            <TextBlock Text="Sweetener"
+                       Style="{StaticResource TextBlockStyle}"/>
+            <Button.Flyout>
+                <MenuFlyout x:Name="SweetenerFlyOut"
+                            Placement="Top"
+                            Closed="SweetenerFlyOut_Closed">
+                    <MenuFlyoutItem Text="None"/>
+                    <MenuFlyoutItem Text="Sugar"/>
+                </MenuFlyout>
+            </Button.Flyout>
+        </Button>
+        <Button Grid.Row="1"
+                Grid.Column="3"
+                Margin="10,0,0,0"
+                Name="CreamBtn">
+            <TextBlock Text="Cream"
+                       Style="{StaticResource TextBlockStyle}"/>
+            <Button.Flyout>
+                <MenuFlyout Placement="Top"
+                            x:Name="CreamFlyout"
+                            Closed="CreamFlyout_Closed">
+                    <MenuFlyoutItem Text="None"/>
+                    <MenuFlyoutItem Text="2% Milk"/>
+                    <MenuFlyoutItem Text="Whole Milk"/>
+                </MenuFlyout>
+            </Button.Flyout>
+        </Button>
     </Grid>
 </Page>

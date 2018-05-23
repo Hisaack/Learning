@@ -6,8 +6,8 @@
            x:Key="ButtonStyle">
         <Setter Property="Background" Value="Black"/>
         <Setter Property="FontSize" Value="18"/>
-        <Setter Property="BorderThickness" Value="2px"/>
         <Setter Property="BorderBrush" Value="Gray"/>
+        <Setter Property="BorderThickness" Value="0,0,2,0"/>
         <Setter Property="HorizontalAlignment" Value="Stretch"/>
         <Setter Property="VerticalAlignment" Value="Stretch"/>
     </Style>

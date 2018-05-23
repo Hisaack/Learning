@@ -26,5 +26,20 @@ namespace Learning.Pages.Stupendous_Style_Challenge
         {
             this.InitializeComponent();
         }
+
+        private void RoastMenuFlyOut_Closed(object sender, object e)
+        {
+
+        }
+
+        private void SweetenerFlyOut_Closed(object sender, object e)
+        {
+
+        }
+
+        private void CreamFlyout_Closed(object sender, object e)
+        {
+
+        }
     }
 }
