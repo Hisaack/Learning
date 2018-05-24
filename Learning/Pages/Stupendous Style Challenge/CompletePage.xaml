@@ -8,6 +8,20 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Stretch="UniformToFill"
+               Height="150"
+               Source="ms-appx:///Assets/color-logo.png"/>
+        <Image Grid.Row="1"
+               Stretch="UniformToFill"
+               Source="ms-appx:///Assets/ticket.jpg"/>
     </Grid>
 </Page>
