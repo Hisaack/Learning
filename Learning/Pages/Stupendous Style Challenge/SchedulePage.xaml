@@ -7,7 +7,31 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    <Grid Background="Green">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="150"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Image Stretch="UniformToFill"
+               Height="150"
+               Source="ms-appx:///Assets/color-logo.png"/>
+        <TextBlock Style="{StaticResource TextBlockStyle}"
+                   Text="Pick Up :"
+                   Grid.Row="1"
+                   Grid.Column="0"/>
+        <CalendarDatePicker Grid.Row="1"
+                    Grid.Column="1"/>
+        <TimePicker Grid.Row="2"
+                    Grid.Column="1"
+                    Margin="0,20,0,0"
+                    ClockIdentifier="12HourClock"/>
     </Grid>
 </Page>

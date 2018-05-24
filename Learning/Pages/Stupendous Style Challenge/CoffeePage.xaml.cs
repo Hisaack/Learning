@@ -29,7 +29,13 @@ namespace Learning.Pages.Stupendous_Style_Challenge
 
         private void RoastMenuFlyOut_Closed(object sender, object e)
         {
+            if (sender is MenuFlyoutItem component)
+                AddCoffeeComponent(component.Text);
+        }
 
+        private void AddCoffeeComponent(string component)
+        {
+            CoffeeComponentsTextBlock.Text = component;
         }
 
         private void SweetenerFlyOut_Closed(object sender, object e)
