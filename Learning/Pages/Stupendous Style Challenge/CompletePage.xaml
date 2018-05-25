@@ -21,6 +21,7 @@
                Height="150"
                Source="ms-appx:///Assets/color-logo.png"/>
         <Image Grid.Row="1"
+               Grid.Column="0"
                Stretch="UniformToFill"
                Source="ms-appx:///Assets/ticket.jpg"/>
     </Grid>

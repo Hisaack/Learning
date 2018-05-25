@@ -31,12 +31,10 @@
             <TextBlock Text="Roast"
                        Style="{StaticResource TextBlockStyle}"/>
             <Button.Flyout>
-                <MenuFlyout Placement="Top"
-                            x:Name="RoastMenuFlyOut"
-                            Closed="RoastMenuFlyOut_Closed">
-                    <MenuFlyoutItem Text="None"/>
-                    <MenuFlyoutItem Text="Dark"/>
-                    <MenuFlyoutItem Text="Medium"/>
+                <MenuFlyout Placement="Top">
+                    <MenuFlyoutItem Text="None" Click="Roast_Click"/>
+                    <MenuFlyoutItem Text="Dark" Click="Roast_Click"/>
+                    <MenuFlyoutItem Text="Medium" Click="Roast_Click"/>
                 </MenuFlyout>
             </Button.Flyout>
         </Button>
@@ -47,11 +45,9 @@
             <TextBlock Text="Sweetener"
                        Style="{StaticResource TextBlockStyle}"/>
             <Button.Flyout>
-                <MenuFlyout x:Name="SweetenerFlyOut"
-                            Placement="Top"
-                            Closed="SweetenerFlyOut_Closed">
-                    <MenuFlyoutItem Text="None"/>
-                    <MenuFlyoutItem Text="Sugar"/>
+                <MenuFlyout Placement="Top">
+                    <MenuFlyoutItem Text="None" Click="Sweetener_Click"/>
+                    <MenuFlyoutItem Text="Sugar" Click="Sweetener_Click"/>
                 </MenuFlyout>
             </Button.Flyout>
         </Button>
@@ -62,24 +58,21 @@
             <TextBlock Text="Cream"
                        Style="{StaticResource TextBlockStyle}"/>
             <Button.Flyout>
-                <MenuFlyout Placement="Top"
-                            x:Name="CreamFlyout"
-                            Closed="CreamFlyout_Closed">
-                    <MenuFlyoutItem Text="None"/>
-                    <MenuFlyoutItem Text="2% Milk"/>
-                    <MenuFlyoutItem Text="Whole Milk"/>
+                <MenuFlyout Placement="Top">
+                    <MenuFlyoutItem Text="None" Click="Cream_Click"/>
+                    <MenuFlyoutItem Text="2% Milk" Click="Cream_Click"/>
+                    <MenuFlyoutItem Text="Whole Milk" Click="Cream_Click"/>
                 </MenuFlyout>
             </Button.Flyout>
         </Button>
         <TextBlock Grid.Row="2"
                    Grid.Column="0"
-                   Margin="0,20,0,0"
+                   Margin="20,20,0,0"
                    Foreground="White"
-                   Text="Coffee"/>
+                   Text="Coffee : "/>
         <TextBlock Grid.Row="2"
                    Grid.Column="1"
                    Grid.ColumnSpan="3"
-                   Text="Sampoche"
                    Foreground="White"
                    Margin="20,20,0,0"
                    Name="CoffeeComponentsTextBlock"/>
