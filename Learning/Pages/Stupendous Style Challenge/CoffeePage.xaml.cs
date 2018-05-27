@@ -27,6 +27,7 @@ namespace Learning.Pages.Stupendous_Style_Challenge
         private string _sweetener;
         private string _cream;
         private static string _coffeeComponent;
+
         public CoffeePage()
         {
             this.InitializeComponent();
@@ -57,13 +58,18 @@ namespace Learning.Pages.Stupendous_Style_Challenge
         private void AddCoffeeComponent()
         {
             if (_roast.Equals("None") || string.IsNullOrEmpty(_roast))
+            {
                 CoffeeComponentsTextBlock.Text = "None";
-            else if (!_roast.Equals("None") || !string.IsNullOrEmpty(_roast))
-                CoffeeComponentsTextBlock.Text = _roast;
-            else if (!_sweetener.Equals("None") || !string.IsNullOrEmpty(_sweetener))
-                CoffeeComponentsTextBlock.Text = string.Concat(_roast, " + " + _sweetener);
-           else if (!_cream.Equals("None") || !string.IsNullOrEmpty(_cream))
-                CoffeeComponentsTextBlock.Text = string.Concat(_roast, " + " + _cream, " + " + _sweetener);
+                return;
+            }
+
+            CoffeeComponentsTextBlock.Text = _roast;
+
+            if (_sweetener != "None" && !string.IsNullOrEmpty(_sweetener))
+                CoffeeComponentsTextBlock.Text += " + " + _sweetener;
+
+            if (_cream != "None" && !string.IsNullOrEmpty(_cream))
+                CoffeeComponentsTextBlock.Text += " + " + _cream;
         }
     }
 }
