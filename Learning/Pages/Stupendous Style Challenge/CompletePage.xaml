@@ -11,18 +11,32 @@
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
         <Image Stretch="UniformToFill"
-               Height="150"
+               Width="150"
+               HorizontalAlignment="Left"
+               Margin="20,10,0,0"
                Source="ms-appx:///Assets/color-logo.png"/>
-        <Image Grid.Row="1"
-               Grid.Column="0"
-               Stretch="UniformToFill"
+        <Image VerticalAlignment="Center"
+               HorizontalAlignment="Center"
+               Grid.Row="1"
+               Width="400"
                Source="ms-appx:///Assets/ticket.jpg"/>
+        <StackPanel Grid.Row="1"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Orientation="Vertical">
+            <TextBlock Text="Order"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="Black"
+                       FontSize="36"/>
+            <TextBlock Text="96"
+                       VerticalAlignment="Center"
+                       HorizontalAlignment="Center"
+                       Foreground="Black"
+                       FontSize="96"/>
+        </StackPanel>
+               
     </Grid>
 </Page>

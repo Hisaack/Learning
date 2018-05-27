@@ -28,10 +28,12 @@
                    Grid.Row="1"
                    Grid.Column="0"/>
         <CalendarDatePicker Grid.Row="1"
-                    Grid.Column="1"/>
+                    Grid.Column="1"
+                            Foreground="White"/>
         <TimePicker Grid.Row="2"
                     Grid.Column="1"
                     Margin="0,20,0,0"
+                    Foreground="White"
                     ClockIdentifier="12HourClock"/>
     </Grid>
 </Page>
