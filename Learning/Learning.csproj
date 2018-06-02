@@ -95,6 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\AvatarIcons.cs" />
     <Compile Include="Models\Book.cs" />
     <Compile Include="Pages\DataBindingInGridVew.xaml.cs">
       <DependentUpon>DataBindingInGridVew.xaml</DependentUpon>
@@ -110,6 +111,9 @@
     </Compile>
     <Compile Include="Pages\HambugerHeavenChallenge\HamburgerHeavenChallenge.xaml.cs">
       <DependentUpon>HamburgerHeavenChallenge.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\KeepingDataControlsUpdated.xaml.cs">
+      <DependentUpon>KeepingDataControlsUpdated.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\LaudibleChallenge.xaml.cs">
       <DependentUpon>LaudibleChallenge.xaml</DependentUpon>
@@ -183,8 +187,14 @@
     <Content Include="Assets\color-logo.png" />
     <Content Include="Assets\complete-icon.png" />
     <Content Include="Assets\donut-icon.png" />
+    <Content Include="Assets\female-01.png" />
+    <Content Include="Assets\female-02.png" />
+    <Content Include="Assets\female-03.png" />
     <Content Include="Assets\Financial.png" />
     <Content Include="Assets\Food.png" />
+    <Content Include="Assets\male-01.png" />
+    <Content Include="Assets\male-02.png" />
+    <Content Include="Assets\male-03.png" />
     <Content Include="Assets\schedule-icon.png" />
     <Content Include="Assets\ticket.jpg" />
     <Content Include="Assets\white-logo.png" />
@@ -219,6 +229,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\HambugerHeavenChallenge\HamburgerHeavenChallenge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\KeepingDataControlsUpdated.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
