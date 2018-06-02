@@ -149,6 +149,9 @@
     <Compile Include="Pages\Stupendous Style Challenge\Stupendous Style Challenge.xaml.cs">
       <DependentUpon>Stupendous Style Challenge.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\VisualStateManager.xaml.cs">
+      <DependentUpon>VisualStateManager.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -251,6 +254,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\Stupendous Style Challenge\Stupendous Style Challenge.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\VisualStateManager.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
