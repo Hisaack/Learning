@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Learning.Models;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -22,9 +23,17 @@ namespace Learning.Pages
     /// </summary>
     public sealed partial class DataBindingInGridVew : Page
     {
+        private List<Book> books;
         public DataBindingInGridVew()
         {
             this.InitializeComponent();
+            books = BookManager.GetBooks();
+        }
+
+        private void BookGrid_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            var book=(Book) e.ClickedItem;
+            ResultTextBlock.Text = $"{book.Title} by {book.Author}";
         }
     }
 }
