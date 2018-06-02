@@ -95,6 +95,10 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Models\Book.cs" />
+    <Compile Include="Pages\DataBindingInGridVew.xaml.cs">
+      <DependentUpon>DataBindingInGridVew.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\HambugerHeavenChallenge\Financial.xaml.cs">
       <DependentUpon>Financial.xaml</DependentUpon>
     </Compile>
@@ -149,8 +153,8 @@
     <Compile Include="Pages\Stupendous Style Challenge\Stupendous Style Challenge.xaml.cs">
       <DependentUpon>Stupendous Style Challenge.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\VisualStateManager.xaml.cs">
-      <DependentUpon>VisualStateManager.xaml</DependentUpon>
+    <Compile Include="Pages\VisualStateManagerTask.xaml.cs">
+      <DependentUpon>VisualStateManagerTask.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -161,6 +165,19 @@
     <None Include="Learning_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\1.png" />
+    <Content Include="Assets\10.png" />
+    <Content Include="Assets\11.png" />
+    <Content Include="Assets\12.png" />
+    <Content Include="Assets\13.png" />
+    <Content Include="Assets\2.png" />
+    <Content Include="Assets\3.png" />
+    <Content Include="Assets\4.png" />
+    <Content Include="Assets\5.png" />
+    <Content Include="Assets\6.png" />
+    <Content Include="Assets\7.png" />
+    <Content Include="Assets\8.png" />
+    <Content Include="Assets\9.png" />
     <Content Include="Assets\background.jpg" />
     <Content Include="Assets\coffee-icon.png" />
     <Content Include="Assets\color-logo.png" />
@@ -185,6 +202,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="Pages\DataBindingInGridVew.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\HambugerHeavenChallenge\Financial.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -257,7 +278,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\VisualStateManager.xaml">
+    <Page Include="Pages\VisualStateManagerTask.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
