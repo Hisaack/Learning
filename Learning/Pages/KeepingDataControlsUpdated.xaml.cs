@@ -29,5 +29,15 @@ namespace Learning.Pages
             this.InitializeComponent();
             icons=Icon.LoadAvatarIcons();
         }
+
+        private void ContactsGrid_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void AddBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

@@ -97,6 +97,7 @@
     </Compile>
     <Compile Include="Models\AvatarIcons.cs" />
     <Compile Include="Models\Book.cs" />
+    <Compile Include="Models\Contacts.cs" />
     <Compile Include="Pages\DataBindingInGridVew.xaml.cs">
       <DependentUpon>DataBindingInGridVew.xaml</DependentUpon>
     </Compile>

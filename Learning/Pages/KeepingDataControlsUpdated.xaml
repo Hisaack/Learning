@@ -55,10 +55,27 @@
                 </DataTemplate>
             </ComboBox.ItemTemplate>
         </ComboBox>
-        <GridView Grid.Row="3"
+        <Button Grid.Row="3"
+                Grid.Column="1"
+                Name="AddBtn"
+                Margin="10"
+                Click="AddBtn_Click"
+                Content="Add"/>
+        <GridView Grid.Row="4"
+                  Margin="10"
                   Grid.Column="1"
-                  Name="">
+                  Grid.ColumnSpan="2"
+                  Name="ContactsGrid"
+                  IsItemClickEnabled="True"
+                  ItemClick="ContactsGrid_ItemClick">
         </GridView>
+        <TextBlock Foreground="red"
+                   FontSize="24"
+                   Name="NameTextBlock"
+                   Grid.Row="5"
+                   Grid.Column="1"
+                   Margin="10"
+                   Grid.ColumnSpan="2"/>
 
     </Grid>
 </Page>
