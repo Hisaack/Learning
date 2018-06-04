@@ -23,10 +23,11 @@ namespace Learning.Pages
     /// </summary>
     public sealed partial class KeepingDataControlsUpdated : Page
     {
+        private List<AvatarIcon> icons;
         public KeepingDataControlsUpdated()
         {
             this.InitializeComponent();
-            var icons=Icon.LoadAvatarIcons();
+            icons=Icon.LoadAvatarIcons();
         }
     }
 }
