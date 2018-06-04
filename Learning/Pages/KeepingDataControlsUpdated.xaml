@@ -27,6 +27,7 @@
                    Text="First Name"/>
         <TextBox Grid.Row="0"
                  Margin="10"
+                 Name="FirstNameTBox"
                  VerticalAlignment="Center"
                  Grid.Column="1"/>
         <TextBlock Style="{StaticResource NewTextBlockStyle}"
@@ -34,6 +35,7 @@
                    Grid.Row="1"
                    Grid.Column="0"/>
         <TextBox Grid.Column="1"
+                 Name="LastNameTBox"
                  Margin="10"
                  VerticalAlignment="Center"
                  Grid.Row="1"/>
@@ -42,6 +44,7 @@
                    Grid.Column="0"
                    Text="Avatar"/>
         <ComboBox Grid.Column="1"
+                  Name="AvatarComboBox"
                  Margin="10"
                   Grid.Row="2"
                   Height="50"
@@ -67,7 +70,23 @@
                   Grid.ColumnSpan="2"
                   Name="ContactsGrid"
                   IsItemClickEnabled="True"
+                  ItemsSource="{x:Bind contacts}"
                   ItemClick="ContactsGrid_ItemClick">
+            <GridView.ItemTemplate>
+                <DataTemplate x:DataType="data:Contacts">
+                    <StackPanel Orientation="Vertical">
+                        <Image Source="{x:Bind Avatar}"
+                               Width="40"
+                               Height="40"/>
+                        <TextBlock Text="{x:Bind Name}"
+                                   FontWeight="Bold"
+                                   HorizontalAlignment="Center"/>
+                        <TextBlock Text="{x:Bind LastName}"
+                                 FontWeight="Bold"
+                                 HorizontalAlignment="Center"/>
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
         </GridView>
         <TextBlock Foreground="red"
                    FontSize="24"

@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Contacts;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -24,20 +26,31 @@ namespace Learning.Pages
     public sealed partial class KeepingDataControlsUpdated : Page
     {
         private List<AvatarIcon> icons;
+        private ObservableCollection<Contacts> contacts;
         public KeepingDataControlsUpdated()
         {
             this.InitializeComponent();
             icons=Icon.LoadAvatarIcons();
+            contacts=new ObservableCollection<Contacts>();
         }
 
         private void ContactsGrid_ItemClick(object sender, ItemClickEventArgs e)
         {
-
+            var ontact = (Contacts) e.ClickedItem;
+            NameTextBlock.Text = string.Concat(ontact.Name, " ", ontact.LastName);
         }
 
         private void AddBtn_Click(object sender, RoutedEventArgs e)
         {
-
+            string avatar = ((AvatarIcon)AvatarComboBox.SelectedValue)?.IconPath;
+            var contact = new Contacts()
+            {
+                Name = FirstNameTBox.Text,
+                LastName = LastNameTBox.Text,
+                Avatar = avatar
+            };
+            
+            contacts.Add(contact);
         }
     }
 }
